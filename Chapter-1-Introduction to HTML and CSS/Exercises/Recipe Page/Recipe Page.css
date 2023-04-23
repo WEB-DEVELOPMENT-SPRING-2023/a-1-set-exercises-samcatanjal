@@ -1,20 +1,46 @@
 body {
     background-color: #e9cba7;
+    background-image: url("1.jpeg");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
 }
+
 h1 {
     text-align: center;
-    font-family: <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    font-family: "Ysabeau","consolas", sans-serif;
+    color:rgb(215, 130, 70);
+    font-weight: bold;
+    font-size: 40px;
 }
+
 .description {
     text-align: center;
-    color: #f5edda;
+    color: #4e420e;
     padding: 20px;
     background-color: #ca9e7b;
     border-radius: 10px;
+    background: linear-gradient(to bottom, #ca9e7b, antiquewhite);
+    border-style:solid;
+    border-color: antiquewhite;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Ysabeau", sans-serif;
+    font-style: italic;
 
 }
+
 h2 {
     text-align: left;
+    color:rgb(215, 130, 70);
+    font-family: "Ysabeau", sans-serif;
+    text-indent: 50px;
+}
+
+li {
+    font-family: "Ysabeau", sans-serif;
+    font-size: 20px;
+    font-weight:400;
 }

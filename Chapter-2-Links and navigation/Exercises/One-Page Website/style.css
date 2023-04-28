@@ -13,21 +13,21 @@ body {
     margin-right: auto;
 }
 
-#buttons {
-    text-align: center;
-    padding-top: 1px;
-    padding-bottom: 1px;
-    position: relative;
-}
-.nav {
+
+nav {
     font-family: "Instrument Serif", sans-serif;
     font-size: 30px;
-    list-style: none;
-    overflow: hidden;
-    display: inline;
-    margin-left: 145px;
-    margin-right: 100px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+nav a {
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
 a:link,  a:visited {
     text-decoration: none;
     color: white;

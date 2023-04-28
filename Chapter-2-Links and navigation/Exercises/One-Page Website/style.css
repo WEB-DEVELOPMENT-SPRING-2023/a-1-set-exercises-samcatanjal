@@ -72,7 +72,21 @@ h2 {
     width: 300px;
     margin-top: 150px;
     float: left;
-    margin-left: 400px;
+    margin-left: 50px;
+}
+
+#cast {
+    border: hidden;
+    width: 300px;
+    margin-top: 150px;
+    float: left;
+}
+
+#box2 {
+    width: 700px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h3 {
@@ -93,16 +107,11 @@ li {
     font-family: "Instrument Serif", sans-serif;
 }
 
-#cast {
-    border: hidden;
-    width: 300px;
-    margin-top: 150px;
-    float: right;
-    margin-right: 400px;
-}
+
 
 #trailer {
-    margin-top: 850px;
+    margin-left: auto;
+    margin-right: auto;
     color: white;
     text-align: center;
     font-size: 40px;
@@ -110,17 +119,13 @@ li {
 }
 
 .info {
-
+    margin-top: 30px;
     color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
 }
 
-
-
-#info {
-    font-size: 16px;
-    margin-left: 50px;
-    margin-top: 100px;
-}
 
 video {
     width: 800px;
@@ -130,18 +135,22 @@ video {
 
 }
 
-#movie {
-    font-size: 25px;
-    font-family: "Instrument Serif", sans-serif;
-    margin-left: 590px;
-    margin-top: 80px;
-}
-
 button {
+    font-size: 25px;
+    font-family: Arial,sans-serif;
     background-color: goldenrod;
     width: 300px;
     height: 40px;
     border: hidden;
     border-radius: 10px;
     font-size: 20px;
+    position: relative;
+    left: 32%
+}
+
+footer {
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-top: auto;
+    color: white;
 }

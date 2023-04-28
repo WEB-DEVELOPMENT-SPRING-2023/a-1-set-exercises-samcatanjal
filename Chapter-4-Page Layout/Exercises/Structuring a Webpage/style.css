@@ -1,5 +1,7 @@
 body {
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 #box1 {
@@ -36,7 +38,6 @@ a:link, a:visited, a:hover, a:active {
 }
 
 
-
 #box2 {
     border: hidden;
     width: 850px;
@@ -45,7 +46,6 @@ a:link, a:visited, a:hover, a:active {
     float: left;
     margin-top: 10px;
     margin-right: 0;
-    position: relative;
 }
 
 h2 {
@@ -73,9 +73,9 @@ h2 {
     margin-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-left: 20px;
+    margin-left: 900px;
     background-color: #172d67;
-    position:static
+    position: absolute;
 }
 
 #sec2 {
@@ -92,10 +92,14 @@ ul li {
 
 
 #box4 {
-    margin-top: 530px;
     background-color: #8c15e9;
     margin-left: -10px;
     margin-right: -10px;
+    margin-top: -14px;
+}
+
+footer {
+    margin-top: auto;
 }
 
 #box4 p {

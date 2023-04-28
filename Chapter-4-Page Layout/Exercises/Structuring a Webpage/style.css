@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+}
+
+#box1 {
+    border: hidden;
+    background-color: #17072b;
+    margin-top: -30px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-decoration: underline;
+    font-family: "Tahoma", sans-serif;
+    font-size: 40px;
+}
+
+nav a {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: white;
+    font-family: "Tahoma", sans-serif;
+}
+
+
+
+#box2 {
+    border: hidden;
+    width: 850px;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    margin-top: 10px;
+    margin-right: 0;
+    position: relative;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Tahoma, sans-serif;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#sec1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#img1 {
+    width:100%;
+    height: 350px;
+}
+
+#box3 {
+    border: hidden;
+    width: 500px;
+    float: left;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    background-color: #172d67;
+    position:static
+}
+
+#sec2 {
+    color: white;
+}
+
+ul li {
+    margin-left: -30px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: '- ';
+    line-height: 40px;
+    font-size: 20px;
+}
+
+
+#box4 {
+    margin-top: 530px;
+    background-color: #8c15e9;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+#box4 p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#img2 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 45px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+#img3 {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}

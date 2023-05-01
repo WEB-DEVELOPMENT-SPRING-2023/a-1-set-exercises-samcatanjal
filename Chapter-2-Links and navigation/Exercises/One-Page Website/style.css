@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background: linear-gradient(blue,blueviolet);
     background-repeat: none;
@@ -7,8 +13,7 @@ body {
 
 #box {
     background-color: blueviolet;
-    border-radius: 10px;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -20,10 +25,10 @@ nav {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 50px;
+    margin-right: 350px;
 }
 
-nav a {
+.sections {
     padding-left: 140px;
     padding-right: 140px;
 
@@ -38,6 +43,20 @@ a:link,  a:visited {
 a:hover, a:active{
     font-weight: bold;
 }
+
+button {
+    font-size: 25px;
+    font-family: Arial,sans-serif;
+    background-color: goldenrod;
+    width: 200px;
+    height: 40px;
+    border: hidden;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    position: absolute;
+}
+
 
 h1 {
     font-size: 80px;
@@ -97,7 +116,8 @@ h3 {
 }
 
 .list {
-    margin-left: 65px;
+    margin-left: 95px;
+    padding-top: 20px;
 }   
 
 li {
@@ -118,34 +138,12 @@ li {
     font-family: "Instrument Serif", sans-serif;
 }
 
-.info {
-    margin-top: 30px;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
-}
-
-
 video {
     width: 800px;
     border: dashed goldenrod;
     padding: 20px;
     border-radius: 10px;
 
-}
-
-button {
-    font-size: 25px;
-    font-family: Arial,sans-serif;
-    background-color: goldenrod;
-    width: 300px;
-    height: 40px;
-    border: hidden;
-    border-radius: 10px;
-    font-size: 20px;
-    position: relative;
-    left: 32%
 }
 
 footer {

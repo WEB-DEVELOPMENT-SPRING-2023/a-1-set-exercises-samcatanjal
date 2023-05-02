@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
 
     background-color: #e9cba7;
@@ -9,70 +15,107 @@ body {
     background-blend-mode: luminosity;
 }
 
-h1 {
+#nav {
+    text-align: right;
+    margin-top: 30px;
+    margin-right: 30px;
+}
 
+.button {
+    border: solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "Ysabeau","consolas", sans-serif;
+    text-decoration: none;
+    color:saddlebrown;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: saddlebrown;
+    color: antiquewhite;
+}
+
+
+h1 {
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
     font-family: "Ysabeau","consolas", sans-serif;
-    color:rgb(215, 130, 70);
+    color: #be7656;
     font-weight: bold;
     font-size: 40px;
 }
 
-#box {
-    
-    border-top: dashed #e9cba7;
-    border-bottom: dashed #e9cba7;
-    width: 75%;
+#grp1 {
+    border-top: dashed;
+    border-bottom: dashed;
+    border-color: #be7656;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 50px;
-    margin-top: 50px;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description {
     font-size: 20px;
-    font-weight: bold;
-    font-family: "Ysabeau", sans-serif;
     font-style: italic;
-    color: #4e420e;
-
+    font-family: "Ysabeau","consolas", sans-serif;
+    color: #794028;
+    font-weight: 500;
 }
 
-#text1 {
-
+h2 {
     text-align: center;
-    color:rgb(215, 130, 70);
-    font-family: "Ysabeau", sans-serif;
-
-}
-
-#text2 {
-
-    text-align: left;
-    color:rgb(215, 130, 70);
-    font-family: "Ysabeau", sans-serif;
-    text-indent: 50px;
-    margin-left: 50px;
-    margin-top: 100px;
-    margin-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 180px;
+    margin-bottom: 40px;
+    font-family: "Ysabeau","consolas", sans-serif;
+    font-size: 26px;
+    color: saddlebrown;
 }
 
 #ingredients {
-
-    border: dashed #e9cba7;
-    width: 45%;
+    border: dashed #be7656;
+    border-radius: 5px;
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    font-family: "Ysabeau", sans-serif;
-    text-indent: 15px;
-    font-size: 20px;
-    font-weight:400;
+    padding: 30px;
+}
 
+ul li {
+    list-style-type: none;
+    font-size: 18px;
+    font-family: "Ysabeau","consolas", sans-serif;
+    line-height: 2;
+    color: #794028;
+}
+
+#procedure {
+    border: hidden;
+    width: fit-content;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 ol li {
+    padding-left: 20px;
+    font-size: 18px;
+    font-family: "Ysabeau","consolas", sans-serif;
+    line-height: 2;
+    color: #794028;
+}
 
-    font-family: "Ysabeau", sans-serif;
-    font-size: 20px;
-    font-weight:400;
-    margin-left: 50px;
-    margin-right: 75px;
+#top {
+    border: hidden;
+    float: right;
+    padding: 30px;
+    color: saddlebrown;
+    font-size: 16px;
+    font-family: "Ysabeau","consolas", sans-serif;
 }

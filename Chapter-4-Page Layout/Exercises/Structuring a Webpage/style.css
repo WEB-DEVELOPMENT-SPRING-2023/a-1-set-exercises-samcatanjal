@@ -1,129 +1,125 @@
-body {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+        cursor: default;
+    }
 
-#box1 {
-    border: hidden;
-    background-color: #17072b;
-    margin-top: -30px;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+    body {
+        background-color: white;
+    }
 
-header {
-    text-align: center;
-}
+    header {
+        background-color: #17072b;
+        color: white;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
 
-h1 {
-    color: white;
-    text-decoration: underline;
-    font-family: "Tahoma", sans-serif;
-    font-size: 40px;
-}
+    h1 {
+        font-family: "Tahoma", sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        text-decoration: underline;
+        margin-bottom: 20px;
+    }
 
-nav a {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
-}
+    nav a {
+        text-decoration: none;
+        padding: 0 20px 0 20px;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+    }
 
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: white;
-    font-family: "Tahoma", sans-serif;
-}
+    #section1 {
+        border: hidden;
+        float: left;
+        padding: 10px 10px 0px 30px;
+        width: 61%;
+        margin-top: 10px;
+        overflow: hidden;
+    }
 
+    #section1 p {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
-#box2 {
-    border: hidden;
-    width: 850px;
-    padding-left: 20px;
-    padding-right: 20px;
-    float: left;
-    margin-top: 10px;
-    margin-right: 0;
-}
+    }
 
-h2 {
-    font-size: 30px;
-    font-family: Tahoma, sans-serif;
-    text-decoration: underline;
-    font-weight: bolder;
-}
+    h2 {
+        font-family: "Tahoma", sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        text-decoration: underline;
+    }
 
-#sec1 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 20px;
-}
+    #section2 h2 {
+        margin-top: 10px;
+    }
 
-#img1 {
-    width:100%;
-    height: 350px;
-}
+    #img1 {
+        width: 870px;
+        height: 356px;
+        image-resolution: cover;
+    }
 
-#box3 {
-    border: hidden;
-    width: 500px;
-    float: left;
-    margin-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-left: 900px;
-    background-color: #172d67;
-    position: absolute;
-}
+    #section2 {
+        color: white;
+        background-color: #172d67;
+        border: solid;
+        margin-top: 10px; 
+        width: 39%;
+        height: 505px;
+        float: right;
+        padding: 10px 10px 0px 30px;
+        overflow: hidden;
+    }
 
-#sec2 {
-    color: white;
-}
+    ul {
+        margin-top: 20px;
+    }
 
-ul li {
-    margin-left: -30px;
-    font-family: Arial, Helvetica, sans-serif;
-    list-style-type: '- ';
-    line-height: 40px;
-    font-size: 20px;
-}
+    li {
+        list-style-position: inside;
+        list-style-type: '- ';
+        font-size: 20px;
+        line-height: 2;
+    }
 
+    #img2 {
+        width: 220px;
+        height: 220px;
+        margin-right: 5px;
+        float: left;
+    }
 
-#box4 {
-    background-color: #8c15e9;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -14px;
-}
+    #img3 {
+        width: 220px;
+        height: 220px;
+        margin-left: 5px;
+        float: left;
+    }
 
-footer {
-    margin-top: auto;
-}
+    div {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 60px;
+        overflow: hidden;
+    }
 
-#box4 p {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-#img2 {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-left: 45px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
-
-#img3 {
-    width: 200px;
-    height: 200px;
-    float: left;
-    margin-left: 10px;
-    margin-top: 45px;
-    margin-bottom: 45px;
-}
+    footer {
+        clear: both;
+        text-align: center;
+        background-color: #8c15e9;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        padding: 10px;
+        color: white;
+    }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="works.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Sam's Works</title>
+</head>
+<body>
+
+    <header> <!-- header section -->
+        <nav> <!-- group of navigational links -->
+            <a href="#photo">Photography</a> <!-- links to specific part of page -->
+            <a href="#story">Story/Video Editing</a> <!-- links to specific part of page -->
+            <a href="#design">Website & App Prototype Designs</a> <!-- links to specific part of page -->
+        </nav>
+        
+        <a id="home" href="home.html">Home</a> <!-- link to home -->
+    </header>
+
+    <section class="sec1"> <!-- section 1 -->
+        <h1 id="photo">Photography</h1>  <!-- section 1 title -->
+        <div class="image_group"> <!-- groups all images -->
+            <div><img src="images/1.jpg"></div> <!-- images sorces inside div tags(for design purposes)-->
+            <div><img src="images/2.jpg"></div>
+            <div><img src="images/3.jpg"></div>
+            <div><img src="images/4.jpg"></div>
+            <div><img src="images/5.jpg"></div>
+            <div><img src="images/6.jpg"></div>
+        </div>
+    </section>
+
+    <section class="sec2"> <!-- section 2 -->
+        <h2 id="story">Story/Video Editing</h2>  <!-- section 2 title -->
+        <video class="vid" controls src="videos/Welcome to BathSpa RAK.mp4"></video> <!-- video source with controls -->
+        <video class="vid" controls src="videos/The Boy Who Cried Wolf.mp4"></video>
+        <video class="vid" controls src="videos/Welcome to the Wizarding World.mp4"></video>
+    </section>
+
+    <section class="sec3"> <!-- section 3 -->
+        <h3 id="design">Website & App Prototype Designs</h3>  <!-- section 3 title -->
+        <p>Link to:</p> <!-- section 3 sub title -->
+        <div class="box_links" onclick=window.location.href="https://www.figma.com/proto/whm63w6FVb0Uo7QQxrGgFR/Landing-Page_Samantha-Catanjal?node-id=0%3A1">Landing Page Design</div> <!-- div that act as links -->
+        <div class="box_links" onclick=window.location.href="https://www.figma.com/proto/YE8jBYGoWJmsq1WpCes5cW/LMS-Portal-Design?node-id=0%3A1">Student Portal Design</div>
+        <div class="box_links" onclick=window.location.href="https://www.figma.com/proto/pioaQIFmZ2sO2CeEKwvUGK/CoffeeJab?node-id=0%3A1">Coffee App Design</div>
+    </section>
+
+    <footer> <!-- Other information here and jump back to top link-->
+        <p id="name">Samantha Arianne E. Catanjal</p>
+        <a id="restart" href="#">Jump back to top.</a>
+    </footer>
+</body>
+</html>

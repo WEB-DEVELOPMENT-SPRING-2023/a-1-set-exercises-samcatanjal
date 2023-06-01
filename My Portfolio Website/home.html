@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+    <header> <!-- Contains title -->
+        <h1>My Portfolio</h1> <!-- h1 header for page title -->
+    </header>
+
+    <main> <!-- main section of page -->
+        <div class="intro"> <!-- box for info -->
+            <h2>Introduction</h2> <!-- h2 heading for topic title -->
+            <p id="intro">Hi! Welcome to my portfolio website. My name is <b>Samantha Arianne E. Catanjal</b>. <br><br>
+            I'm a first year college student currently studying Creative Computing in Bath Spa Ras Al-Khaimah. <br><br><br>
+            This website showcases the progression of my skills and experiences in Creative Computing.</p>
+        </div>
+
+
+        <section> <!-- container for boxes -->
+            <div class="container1">
+                <div class="box" id="bio" onclick=window.location.href='bio.html'></div> <!-- div tag that holds an image and acts as a hyperlink-->
+                <p class="title">About Me</p> <!-- text on top  of image sections-->
+            </div>
+
+            <div class="container2">
+                <div class="box" id="works" onclick=window.location.href='works.html'></div>
+                <p class="title">Works</p>
+            </div>
+
+            <div class="container3" onclick=window.location.href='cert.html'>
+                <div class="box" id="cert"></div>
+                <p class="title">Certificates</p>
+            </div>
+   
+        </section>
+
+    
+    </main>
+    <footer> <!-- Other information here and jump back to top link-->
+        <p id="name">Samantha Arianne E. Catanjal</p>
+        <a id="restart" href="#">Jump back to top.</a>
+    </footer>
+</body>
+</html>

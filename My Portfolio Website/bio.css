@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    background-color: #111111;
+    cursor: default;
+}
+
+/* header design start here */
+
+header { /* holds the title and navigation */
+    padding: 60px; /* added padding */
+}
+
+h1 {
+    color: #111111;
+    font-size: 60px; /* font size change*/
+    text-align: center; /* text is centered horizontally */
+    animation: _title 2s ease 1s 1 forwards;
+}
+
+#home { /* link settings */
+    position: absolute; /* position won't change*/
+    top: 50px; /* moves down from top of page*/
+    right: 60px; /* moves left from the side of page*/
+    color: white;
+    font-size: 20px; /* font size change */
+    font-style: normal; /* not italized like default link style*/
+    text-decoration: none; /* no underline */
+}
+
+#home:hover { 
+    font-weight: bold; /* link turns bold when hovered */
+    cursor: pointer; /* cursor changes when hovered */
+}
+
+/* image settings */
+
+img { 
+    height: 400px; /* only changed height to retain aspect ratio */
+    margin-top: 20px; /* positioning of the image relative to the page */
+    margin-left: 180px; /* positioning of the image relative to the page */
+    margin-bottom: 40px; /* positioning of the image relative to the page */
+    border-radius: 20px; /* softer border corners */
+    border: solid #222222; /* border color */
+    float: left; /* floats left so next sections float to its right */
+}
+
+/* paragraph beside picture settings */
+
+.intro {
+    float: left; /* it positions to the right of the image*/
+    margin-top: 20px; /* adds space between header and this element */
+    margin-left: 40px; /* space between image and this element */
+    border: solid #222222; /* border color */
+    border-radius: 20px; /* softer border corners */
+    padding: 40px; /* even space from content to borders */
+    height: 400px; /* to match image height */
+    width: 50%; /* width of element */
+}
+
+.intro p { /* paragraph inside settings */
+    line-height: 3.5; /* adds space between lines*/
+    font-size: 18px; /* font size change */
+    color: white;
+}
+
+#cc {
+    cursor: pointer; /* cursor changes when link is hovered */
+    font-style: italic; /* font style changed to italic */
+    color: white;
+}
+
+/* "favorites" section */
+
+.fav { 
+    clear: both; /* doesn't follow the float proerties of previous elements*/
+    float: left; /* moves next objects to its right */
+    border: solid #222222; /* border color*/
+    width: fit-content; /* width set to content size (eliminating excess space) */
+    height: 360px; /* height of section */
+    margin-left: 180px; /* position of element from the left */
+    padding: 40px; /* space between content and borders */
+    border-radius: 20px; /* softer border corners */
+}
+
+h2  {
+    color: white;
+    font-size: 30px; /* font size change */
+    margin-bottom: 40px; /* space between title and info below */
+}
+
+ol {
+    color: white;
+    list-style-position: inside; /* all elements of list is inside the borders */
+    line-height: 2; /* space between each line */
+    font-size: 18px; /* font size change */
+}
+
+/* song section */
+
+.song_section {
+    width: 41%; /* width of this section */
+    height: 360px; /* height of this section */
+    padding: 40px; /* space between content and borders */
+    border: solid #222222; /* border color */
+    border-radius: 20px; /* softer border corners */
+    float: left; /* sits beside the previous section */
+    margin-left: 40px; /* space from previous section*/
+    margin-bottom: 90px; /* space to the next section */
+    text-align: center; /* text is centered horizontally */
+}
+
+h3 {
+    color: white;
+    font-size: 30px; /* font size change */
+    margin-bottom: 40px; /* space between title and content below */
+}
+
+#song, #song2 {
+    color: white;
+    font-size: 20px; /* font size change */
+    padding: 20px; /* space in case I add borders */
+}
+
+#song {
+    animation: _flicker 3s ease 0s infinite alternate;
+}
+
+/* footer settings */
+
+footer {
+    float: none;
+    clear: both; /* doesn't follow the float proerties of previous elements*/
+    margin-top: 80px; /* space from previous sections */
+    padding-bottom: 60px; /* adds space of text and bottom of page */
+}
+
+#name {
+    color: white;
+    float: left; /* name floats left */
+    margin-left: 60px; /* adds space between side of page and paragraph (my name) */
+    padding: 16px; /* added padding in case I want to add borders */
+}
+
+#restart {
+    color: white;
+    float: right; /* link floats right */
+    margin-right: 60px; /* space from right side of page to this link */
+    padding: 16px; /* added in case of added borders */
+    cursor: pointer; /* when hovered cursor changes */
+}
+
+/* scrollbar settings */
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
+}
+
+/* keyframes */
+
+@keyframes _title {
+    0% {
+        color: #111111;
+        font-size: 0px;
+    }
+    50% {
+        font-size: 80px;
+    }
+
+    100% {
+        color: white;
+        font-size: 60px;
+    }
+}
+
+@keyframes _flicker {
+    from {
+        color: #111111;
+    }
+    to {
+        color: white;
+    }
+}

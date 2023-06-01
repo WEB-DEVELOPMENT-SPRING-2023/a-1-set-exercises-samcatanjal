@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="bio.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>All About Sam</title>
+</head>
+<body>
+    <header>
+        <h1>ALL ABOUT ME</h1> <!-- Main page title -->
+        <a id="home" href="home.html">Home</a>
+    </header>
+
+    <main>
+        <img title="Hello!" src="images/pic.jpg" alt="my picture"> <!-- my picture floated to the left -->
+        <div class="intro">
+            <p>
+                My name is Samantha Arianne E. Catanjal. <br>
+                I am 20 years old (May 2023). My birthday is on the 25th of April.<br>
+                I was born in the Philippines and I grew up in the UAE. <br>
+                Now, I currently study in Bath Spa University RAK as a first year <a id="cc" href="https://bathspa.ae/bsc-creative-computing/">Creative Computing</a> student.
+            </p>
+        </div>
+        <div class="fav">
+            <h2>My top 5 favorite activities are:</h2> <!-- Tilte for second section-->
+            <ol>
+                <li title="I like playing Valorant, Genshin Impact, and Overwatch!">Playing Video Games</li> <!-- I used title tags to put messages when hovering to add personality to the website -->
+                <li title="I am a fan of the Harry Potter Series :)">Reading Books</li>
+                <li title="Listen to my current favorite song there -->">Listening to New Music</li>
+                <li title="I'm not good but I can try!">Singing and Playing the Guitar</li>
+                <li title="Have you watched Interstellar? I love that movie!">Watching Movies, TV shows, and Anime </li>
+            </ol>
+        </div>
+        <div class="song_section">
+            <h3>Play Now:</h3> <!-- Title for the third section -->
+            <p id="song">Understand - Keshi</p>
+            <audio id="understand" loop controls> <!-- audio file that has controls and loops when finished-->
+                <source src="audio/understand-keshi.mp3" type="audio/mp3">
+            </audio>
+            <p id="song2"><i>My favorite song as of 2023...</i></p>
+        </div>
+    </main>
+
+    <footer> <!-- Other information here and jump back to top link-->
+        <p id="name">Samantha Arianne E. Catanjal</p>
+        <a id="restart" href="#">Jump back to top.</a>
+    </footer>
+
+    <script>  /* instruction for audio to start with low volume */
+        let audio = document.getElementById("understand");
+        audio.volume = .1;
+    </script>
+</body>
+</html>

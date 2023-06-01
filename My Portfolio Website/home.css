@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    background-color: #111111;
+    cursor: default;
+    
+}
+
+
+/* header design start here */
+
+header {
+    margin: 20px;
+}
+
+h1 { /* main website title settings */
+    color: #111111;
+    padding: 50px;
+    font-size: 50px;
+    animation: _h1 3s ease 1s 1 forwards;
+}
+
+
+/* introduction paragraph design start here */
+
+.intro { /* paragraph container settings */
+    cursor: help;
+    margin-left: auto; /* margin left and right set to auto so content is centered horizontally */
+    margin-right: auto;
+    padding: 60px; /* added even space in every direction from content to borders*/
+    color: #111111;
+}
+
+h2 { /* introduction title settings */
+    cursor: help;
+    text-align: center; /* aligned to center honrizontally on page */
+    font-size: 36px; /* larger font size */
+    padding: 20px; /* added even space in every direction from content to borders (in case I decided to add borders) */
+    padding-top: 0; /* remove padding on top because space is too big between header and h2 caused by header margins */
+    margin-bottom: 20px; /* added space below for next section, so title and paragraph don't look too clumped */
+}
+
+#intro, b { /* main page paragraph settings */
+    cursor: help;
+    text-align: center; /* aligned center*/
+    font-size: 18px; /* font size change */
+}
+
+.intro:hover {
+    color: white;
+}
+
+/* category boxes design start here */
+
+section { /* settings for the group that contains all three boxes */
+    display: flex; /* content is put side by side */
+    justify-content: center; /* centers content (three boxes) */
+    margin-top: 60px; /* added more space on top between this section and paragraph above*/
+    margin-bottom: 60px; /* added the same space for next section */
+}
+
+.box { /* settings for each box */
+    flex:auto;
+    width: 25vw; /* width of each box */
+    height: 35vw; /* height of each box */
+    margin-left: 10px; /* margin left and right added to create space between the boxes*/
+    margin-right: 10px;
+    border-radius: 30px; /* soften corners of boxes */
+    cursor: pointer; /* when hovered over content cursor changes, indicating it's clickable */
+    transition: 1s ease; /* the duration of the scale tranform */
+}
+
+.box:hover { /* when hovered, boxes turn slightly bigger */
+    transform: scale(1.05);
+}
+
+/* images within the three separate boxes */
+
+#bio {
+    background-image:url(images/guitar_stock.jpg); /* image source */
+    background-size: cover; /* fits image inside container */
+    opacity: 30%;  /* image originally opacity when not being hovered */
+}
+
+#works {
+    background-image: url(images/computer_stock.jpg); /* image source */
+    background-size: cover; /* fits image inside container */
+    opacity: 30%; /* image originally opacity when not being hovered */
+}
+
+#cert {
+    background-image: url(images/certificate_stock.jpg); /* image source */
+    background-size: cover; /* fits image inside container */
+    opacity: 30%; /* image originally opacity when not being hovered */
+}
+
+#bio:hover {opacity: 100%} /* opacity of image turns to 100% when hovered */
+#works:hover {opacity: 100%}  /* opacity of image turns to 100% when hovered */
+#cert:hover {opacity: 100%}  /* opacity of image turns to 100% when hovered */
+
+.container1, .container2, .container3 {
+    position: relative; /* position of boxes set to relative so the text appears on top of it instead of outside its borders */
+}
+
+.container1:hover, .container2:hover, .container3:hover {
+    font-weight: bold; /* text turns bold when box is hovered */
+}
+
+.container1 p, .container2 p, .container3 p {
+    color: white;
+    cursor: pointer; /* hover over text changes cursor */
+    background-color: transparent; /* default text's black background set to transparent */
+    font-size: 30px; /* font size change */
+    position: absolute; /* the text will not move within the container */ 
+    top: 50%; /* centers text vertically inside box */
+    left: 50%; /* centers text horizontally inside box */
+    transform: translate(-50%, -50%);
+}
+
+/* footer settings start here */
+
+footer {
+    padding-bottom: 60px; /* adds space of text and bottom of page */
+    margin-top: 80px; /* space between content above and footer */
+}
+
+#name { 
+    color: white;
+    float: left; /* name floats left */
+    margin-left: 60px; /* adds space between side of page and paragraph (my name) */
+    padding: 16px; /* added padding in case I want to add borders */
+}
+
+#restart {
+    color: white;
+    float: right; /* link floats right */
+    margin-right: 60px; /* space from right side of page to this link */
+    padding: 16px; /* added in case of added borders */
+    cursor: pointer; /* when hovered cursor changes */
+}
+
+
+/* scrollbar design start here */
+
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
+}
+
+/* keyframing animations */
+
+@keyframes _h1 {
+    from {
+        padding-left: 100px;
+        color: #111111;
+    }
+    to {
+        padding-left: 50px;
+        color: white;
+    }
+}
+
+@keyframes color_change {
+    from {
+        color: transparent;
+    }
+    to {
+        color: white;
+    }
+}

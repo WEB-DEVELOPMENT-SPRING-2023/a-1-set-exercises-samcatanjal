@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    background-color: #111111;
+    cursor: default;
+}
+
+/* header content settings */
+header {
+    padding: 60px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#home {
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+#home:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* section settings */
+
+.sololearn div{
+    margin-left: auto; /* margin left and right set to auto, centerly aligns div hornizontally on page */
+    margin-right: auto;
+    width: fit-content; /* removes excess space from border to content */
+    justify-content: center; /* content inside div is centered*/
+}
+
+h2 {
+    text-align: center; /* aligns text center */
+    padding: 40px; /* padding between border and content */
+    font-size: 50px; /* font sieze change */
+}
+
+img {
+    height: 600px; /* only height is changed to maintain aspect ratio */
+}
+
+footer {
+    padding-bottom: 60px; /* adds space of text and bottom of page */
+    margin-top: 80px; /* space between content above and footer */
+}
+
+#name { 
+    float: left; /* name floats left */
+    margin-left: 60px; /* adds space between side of page and paragraph (my name) */
+    padding: 16px; /* added padding in case I want to add borders */
+}
+
+#restart {
+    float: right; /* link floats right */
+    margin-right: 60px; /* space from right side of page to this link */
+    padding: 16px; /* added in case of added borders */
+    cursor: pointer; /* when hovered cursor changes */
+}
+
+/* scrollbar settings */
+
+::-webkit-scrollbar {
+    width: 14px; /* width of scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #222222; /* background of scrollbar color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333; /* scrollbar thumb color when not interacted with */
+    border-radius: 20px; /* softer scrollbar thumb corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f; /* changes color of scrollbar thumb when hovered/used */
+}
+

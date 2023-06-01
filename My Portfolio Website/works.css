@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    background-color: #111111;
+    cursor: default;
+    
+}
+
+/* header settings */
+
+header {
+    padding: 30px; /* space between border and content*/
+    position: fixed; /* stays on top of page */
+    width: 100%; /* takes up the width of the whole page */
+    top: 0%; /* eliminates space from top of page */
+}
+
+nav {
+    margin-left: auto; /* margin left and right to center align content inside container */
+    margin-right: auto;
+    text-align: center;
+}
+
+nav a { /* individual link settings */
+    padding: 20px; /* space between border and content */
+    cursor: pointer; /* when hovered it changes cursor */
+    font-size: 20px; /* font size change */
+    text-decoration: none; /* no underline */
+    border-radius: 10px; /* softer border corners */
+}
+
+nav a:hover {
+    background-color: #222222; /* background color changes when hovered */
+}
+
+#home {
+    position: absolute;  /* position won't change*/
+    top: 30px; /* moves down from top of page*/
+    right: 60px;  /* moves left from the side of page*/
+    font-size: 20px;  /* font size change */
+    font-style: normal; /* not italized like default link style*/
+    text-decoration: none;  /* no underline */
+}
+
+#home:hover {
+    font-weight: bold; /* font turns bold when hovered */
+    cursor: pointer; /* cursor changes when hovered */
+}
+
+/* main section settings */
+
+h1 {
+    margin-top: 140px; /* space from previous content/section */ 
+    text-align: center; /* text aligned center of page */
+    padding: 60px; /* space between border and content */
+    padding-top: 100px; /* added more space to separate from above section (used padding so that it shows the whole word when clicking from nav) */
+    font-size: 60px; /* font size change */
+}
+
+h2, h3 {
+    text-align: center; /* text aligned center of page */
+    padding: 60px; /* space between border and content */
+    padding-top: 100px; /* added more space to separate from above section (used padding so that it shows the whole word when clicking from nav) */
+    font-size: 60px; /* font size change */
+}
+
+/* section 1 */
+
+.image_group {
+    display: flex; /* content appear beside each other */
+    flex-wrap: wrap; /* allows content to move to next line when there is no more space*/
+    gap: 50px; /* gap between content */
+    max-width: 100%; /* limits enlarging image */
+    width: calc(100%-20px); /* limits no more than 2 image per row */
+    justify-content: center; /* content is centered in container */
+    margin-left: auto;
+    margin-right: auto; /* margin left and right to center this group horizontally in page */
+
+}
+
+.image_group div {
+    transition: 1s ease-in; /* transition directions */
+}
+
+.image_group div:hover {
+    transform: scale(1.05); /* scales larger when hovered */
+
+}
+
+img {
+    height: 300px; /* height of images */
+    width: 600px; /* width of images */
+}
+
+/* section 2 */
+
+.sec2 {
+    text-align: center; /* aligns text center*/
+    padding: 100px; /* space between border and content */
+}
+
+.vid {
+    height: 600px; /* only changed height of video to maintain aspect ratio */
+    padding: 40px; /* in case of added borders/it also acts as space between other contents */
+}
+
+/* section 3 */
+
+.sec3 div {
+    border-radius: 10px; /* softer border corners */
+    background-color: #222222; /* background color of div */
+    width: 80%; /* takes up 80% of page's width */
+    margin-left: auto; /* margin left and right to center align div horizontally in page */
+    margin-right: auto;
+    padding: 40px; /* space between border and content */
+    margin-bottom: 20px; /* added space from this section to the footer */
+}
+
+.sec3 div:hover {
+    background-color: #333333; /* changes background color when hovered */
+}
+
+.sec3 p {
+    text-align: center; /* aligns text center */
+    padding: 30px; /* space between paragraph and div */
+    font-size: 18px; /* font size change */
+}
+
+.box_links {
+    cursor: pointer; /* cursor changes when hovered */
+    text-align: center; /* paragraph is aligned center horizontally */
+    font-size: 20px; /* font size change */
+}
+
+/* footer settings */
+
+footer {
+    padding-bottom: 60px; /* adds space of text and bottom of page */
+    margin-top: 80px; /* space between content above and footer */
+}
+
+#name { 
+    float: left; /* name floats left */
+    margin-left: 60px; /* adds space between side of page and paragraph (my name) */
+    padding: 16px; /* added padding in case I want to add borders */
+}
+
+#restart {
+    float: right; /* link floats right */
+    margin-right: 60px; /* space from right side of page to this link */
+    padding: 16px; /* added in case of added borders */
+    cursor: pointer; /* when hovered cursor changes */
+}
+
+
+/* scrollbar settings */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3f3f3f;
+}
+
+
